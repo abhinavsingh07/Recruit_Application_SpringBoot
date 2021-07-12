@@ -29,7 +29,6 @@ import com.abhiwork.repository.JobOfferRepo;
 @Validated // enable validation
 @RestController
 @RequestMapping("/jobportal/api")
-@EnableWebMvc
 public class JobOfferRestController {
 
 	@Autowired

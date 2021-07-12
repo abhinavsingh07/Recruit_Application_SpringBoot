@@ -3,7 +3,7 @@ package com.abhiwork.model;
 import java.time.LocalDate;
 
 import javax.validation.constraints.Min;
-
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -27,7 +27,7 @@ public class JobApplication {
 	private int realtedOffer;
 
 
-	@org.hibernate.validator.constraints.NotEmpty(message = "{jobapp.candidateEmail.empty}")
+	@NotEmpty(message = "{jobapp.candidateEmail.empty}")
 	@JsonProperty(value = "candidate_email")
 	private String candidateEmail;
 	
